@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>flex布局</title>
+      <link href="/2022/07/13/flex%E5%B8%83%E5%B1%80/"/>
+      <url>/2022/07/13/flex%E5%B8%83%E5%B1%80/</url>
+      
+        <content type="html"><![CDATA[<h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><p>flex布局原理</p><p>flex是flexible Box的缩写 意为弹性布局,用来为盒状模型提供最大的灵活性,任何一个容器都可以指定为flex布局</p><p>-当我们为父盒子设为flex布局以后,子元素的float、clear和vertical-align属性将失效</p><p>-伸缩布局=弹性布局=伸缩盒布局=弹性盒布局=flex布局</p><p>通过给父盒子添加flex属性,来控制子盒子的位置和排列方式,大盒子叫容器,小盒子叫项目</p><p>常见父属性</p><p>felx-direction:设置主轴方向</p><p>主轴和侧轴 </p><p>默认主轴方向为x轴方向,水平向右</p><p>默认侧轴方向为y轴方向,水平向下</p><table><thead><tr><th align="center">属性值</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">row</td><td align="center">默认值从左到右</td></tr><tr><td align="center">row-reverse</td><td align="center">从右到左(会从右边顶头开始)</td></tr><tr><td align="center">column</td><td align="center">从上到下</td></tr><tr><td align="center">column-reverse</td><td align="center">从下到上</td></tr></tbody></table><p>可以理解为一个矩形, row从左上角到右上角,row-reverse从右上角到左上角,column从左上角到左下角,column-reverse从左下角到左上角,有空余不管</p><p>justify-content:设置<strong>主轴</strong>上的子元素排列方式</p><p>注意:使用这个属性之前一定要确定好主轴是哪个</p><table><thead><tr><th align="center">属性值</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">flex-start</td><td align="center">默认值从头部开始如果主轴是x轴,则从左到右</td></tr><tr><td align="center">flex-end</td><td align="center">从尾部开始排列(顺序不变)</td></tr><tr><td align="center">center</td><td align="center">在主轴居中对齐(如果主轴是x轴则水平居中)</td></tr><tr><td align="center">space-around</td><td align="center">平分剩余空间</td></tr><tr><td align="center">space-between</td><td align="center">先两边贴边再平分剩余空间</td></tr></tbody></table><p>flex-wrap:设置子元素是否换行(多行)</p><p>如果子元素太多会缩小元素大小</p><p>默认情况下,项目都拍在一条线上(“轴线”).flex-wrap属性定义,flex布局中默认是不换行的</p><table><thead><tr><th align="center">属性值</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">nowrap</td><td align="center">不换行</td></tr><tr><td align="center">wrap</td><td align="center">换行</td></tr></tbody></table><p>align-items:设置侧轴上的子元素排列方式(单行)</p><p>只有上对齐、下对齐、居中和拉伸</p><table><thead><tr><th align="center">属性值</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">flex-start</td><td align="center">默认值,从上到下</td></tr><tr><td align="center">flex-end</td><td align="center">从下到上</td></tr><tr><td align="center">center</td><td align="center">挤在一起居中(垂直居中)</td></tr><tr><td align="center">stretch</td><td align="center">拉伸(子盒子不要给高度)</td></tr></tbody></table><p>align-content:设置侧轴上的子元素排列方式(多行)</p><p>可以设置上对齐、下对齐、居中、拉伸以及平均分配剩余空间</p><p>对单行无效</p><p>单行找align-items多行找align-content </p><p>配合<code>flex-wrap:wrap</code>使用</p><table><thead><tr><th align="center">属性值</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">flex-start</td><td align="center">默认值从侧轴的头部开始排列</td></tr><tr><td align="center">flex-end</td><td align="center">在侧轴的尾部开始排列(顺序不变)</td></tr><tr><td align="center">center</td><td align="center">在侧轴中间显示</td></tr><tr><td align="center">space-around</td><td align="center">子项在侧轴平分剩余空间</td></tr><tr><td align="center">space-between</td><td align="center">子项在侧轴先分布在两头,在平分剩余空间</td></tr><tr><td align="center">stretch</td><td align="center">设置子项元素高度平分父元素高度</td></tr></tbody></table><p>flex-flow:复合属性,相当于同事设置了flex-direction和flex-wrap</p><p>flex子项常见属性</p><p>flex子项目占的份数</p><p>align-self控制子项自己在<strong>侧轴</strong>的排列方式</p><p>​    align-items 的单个操作</p><p>order属性定义子项的排列顺序(前后顺序)</p><p>​    order:number默认是0</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JS DOM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>npm常用命令(长期更新中...)</title>
       <link href="/2022/07/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4(%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0%E7%89%88)/"/>
       <url>/2022/07/08/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4(%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0%E7%89%88)/</url>
       
-        <content type="html"><![CDATA[<p>常用命令</p><p><code>nvm install latest</code>：   安装最新的 <code>nodejs</code> 版本</p><p><code>nvm install 11.12.0</code>：  安装对应的 <code>nodejs</code> 版本</p><p><code>nvm uninstall 11.12.0</code>：卸载对应的 <code>nodejs</code> 版本</p><p><code>nvm list available</code>：   列出所有可用的 <code>nodejs</code> 版本</p><p><code>nvm list</code>：             查看 <code>nvm</code> 列出已经安装的 <code>nodejs</code> 版本</p><p><code>nvm use 11.12.0</code>：      使用对应的 <code>nodejs</code> 版本</p><p>更多命令在命令行输入 <code>nvm</code> 即可查看</p><p>清除缓存</p><p><code>npm cache clean -f</code></p><p>全局包文件</p><p><code>npm config get prefix</code></p>]]></content>
+        <content type="html"><![CDATA[<p>常用命令</p><p><code>nvm install latest</code>：   安装最新的 <code>nodejs</code> 版本</p><p><code>nvm install 11.12.0</code>：  安装对应的 <code>nodejs</code> 版本</p><p><code>nvm uninstall 11.12.0</code>：卸载对应的 <code>nodejs</code> 版本</p><p><code>nvm list available</code>：   列出所有可用的 <code>nodejs</code> 版本</p><p><code>nvm list</code>：             查看 <code>nvm</code> 列出已经安装的 <code>nodejs</code> 版本</p><p><code>nvm use 11.12.0</code>：      使用对应的 <code>nodejs</code> 版本</p><p>更多命令在命令行输入 <code>nvm</code> 即可查看</p><p>清除缓存</p><p><code>npm cache clean -f</code></p><p>全局包文件</p><p><code>npm config get prefix</code></p><p>git 命令</p><p><code>git status</code>查看本地的更新内容</p><p> <code>git checkout</code>将远程分支检出到本地/从现在的分支去到哪个分支</p><p><code>git rm filename</code>删除指定filename文件</p><p><code>git add .</code>添加所有更新内容到分支上</p><p><code>git commit -m &quot;备注内容&quot;</code>添加备注</p><p><code>git pull</code>会更新所有本地分支与远程分支关联的分支内容</p><p><code>git branch -a</code>看一下具体有哪些分支(包括本地分支和远程分支)</p><p><code>git checkout-b dev orgin/dev</code>远程已有dev分支,将远程的dev分支关联到本地</p><p><code>git chenckout -b gjq</code>在本地创建一个gjq分支</p><p><code>git merge dev</code>将dev分支合并到本地自己所在的这个分支上(注意自己是在哪个分支)</p><p><code>git push --set-upstream origin gjq</code> 将代码提交并且将本地分支和远程分支关联</p><p>提交更新的内容到远程分支并合并自己的分支到dev分支上</p><p><code>git add .-&gt;git commit -m &quot;&quot;-&gt;git push-&gt;git chekout 分支-&gt;git merge gjq-&gt;git checkout dev</code></p>]]></content>
       
       
       
